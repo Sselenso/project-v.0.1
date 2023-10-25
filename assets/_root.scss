@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;600;700&display=swap");
+
+@font-face {
+	font-family: "SF Pro Text";
+	src: url("../fonts/SFProText-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SFProText-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+	--font-familyAlumi: "Alumni Sans", sans-serif;
+	--font-familySFPro: "SF Pro Text", Arial, sans-serif;
+	--font-familyBebas: 'Bebas Neue', sans-serif;
+	--white: #fff;
+	--grey-120: #313130;
+	--grey-46: #716f6e;
+	--grey-30: #908e8d;
+	--grey-16: #c6c4c2;
+	--grey-10: #f7f4f3;
+	--grey-11: #e9e6e4;
+	--grey-13: #d9d6d5;
+	--redBrand-46: #c4433a;
+	--redBrand-30: #df6c5d;
+	--redBrand-12: #fcd5ce;
+	--blueAction-30: #748dcd;
+	--blueAction-46: #436ebd;
+	--green-46: #407b5a;
+	--green-30: #4f9e72;
+	--green-16: #91c2a3;
+	--green-12: #cde3d5;
+	--green-10: #f0f7f2;
+	--orange-30: #df6e41;
+	--red-10: #feeeed;
+	--red-12: #fad5d2;
+	--red-30: #dc6968;
+	--red-46: #c73943;
+	--yellow-46: #a15d00;
+	--yellow-30: #d07a00;
+	--yellow-10: #fff4e4;
+	--yellow-11: #fee3d4;
+	--blue-46: #0d75a1;
+	--blue-30: #4b94be;
+	--blue-12: #d0e0ed;
+	--blue-10: #ecf2f8;
+	--foregroundInverted: var(--grey-10);
+	--foregroundDefault: var(--grey-120);
+	--foregroundAlt: var(--grey-46);
+	--foregroundSubtle: var(--grey-30);
+	--foregroundAction: var(--blueAction-46);
+	--foregroundConstructive: var(--green-46);
+	--foregroundConstructiveAlt: var(--green-30);
+	--foregroundCallout: var(--orange-30);
+	--foregroundCalloutAlt: var(--yellow-30);
+	--foregroundInformation: var(--blue-30);
+	--foregroundPrimaryCTA: var(--white);
+	--borderPrimary: var(--grey-11);
+	--borderSecondary: var(--grey-10);
+	--borderAlt: var(--yellow-10);
+	--borderConstructive: var(--green-10);
+	--borderAccentHover: var(--redBrand-30);
+	--borderAction: var(--blueAction-30);
+	--borderImportant: var(--grey-10);
+	--backgroundBase: var(--white);
+	--backgroundAlt: var(--grey-10);
+	--backgroundAltHover: var(--grey-11);
+	--backgroundInverted: var(--grey-120);
+	--backgroundElevated1: var(--white);
+	--backgroundElevated2: var(--white);
+	--backgroundConstructive: var(--green-46);
+	--backgroundConstructiveAlt: var(--green-30);
+	--backgroundCalloutAlt: var(--yellow-10);
+	--backgroundTextWarningBanner: var(--backgroundCalloutAlt);
+	--backgroundTextHighlight: var(--yellow-11);
+	--backgroundProgressBarValue: var(--green-16);
+	--lessonsListBorder: var(--borderSecondary);
+	--iframeBg: var(--white);
+	--backgroundPrismLineHighlight: #f5e7c6;
+	--prismBlockBg: var(--grey-10);
+	--prismLineNumbersBg: #e7e5e3;
+	--prismColor: var(--foregroundDefault);
+	--prismTokenComment: #708090;
+	--prismTokenConstant: var(--foregroundDefault);
+	--prismTokenPunctuation: #708090;
+	--prismTokenSymbols: #905;
+	--prismTokenSymbolsAlt: #690;
+	--prismTokenOperator: #a67f59;
+	--prismTokenAtRule: #07a;
+	--prismTokenKeywordControl: #07a;
+	--prismTokenFunctionAndClassname: #dd4a68;
+	--prismTokenRegex: #e90;
+	--prismTokenClassname: #dd4a68;
+	--prismTokenVariable: #e90;
+	--prismTokenKeyword: #07a;
+	--prismTokenImportant: #e90;
+	--prismTokenTagPunctuation: #999;
+	--prismTokenCdata: #708090;
+	--prismTokenAttrvalue: #07a;
+	--gradientFadeOutLight: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #fff 80%);
+	--gradientFadeOutDark: linear-gradient(180deg, rgba(35, 37, 41, 0) 0, #232529 80%);
+	--gradientFadeOut: var(--gradientFadeOutLight);
+}
+:root,
+html[data-theme="dark"] {
+	--foregroundAccent: var(--redBrand-46);
+	--foregroundAccentHover: var(--redBrand-30);
+	--borderAccent: var(--redBrand-12);
+	--backgroundProgressBar: var(--grey-13);
+	--foregroundSidebarLink: var(--foregroundDefault);
+}
+html[data-theme="dark"] {
+	--grey-120: #e2e3e7;
+	--grey-66: #c4c7cf;
+	--grey-46: #868d9a;
+	--grey-30: #696e79;
+	--grey-16: #41454c;
+	--grey-13: #35383f;
+	--grey-11: #292c31;
+	--grey-10: #232529;
+	--redBrand-46: #e3796a;
+	--redBrand-30: #d2483e;
+	--redBrand-12: #602620;
+	--blueAction-46: #84a0ef;
+	--blueAction-30: #427ae7;
+	--green-46: #5fa67d;
+	--green-30: #448460;
+	--green-16: #315841;
+	--green-12: #253e2f;
+	--green-10: #1f3428;
+	--orange-30: #ba5d38;
+	--yellow-46: #cf9a69;
+	--yellow-30: #b2722a;
+	--yellow-10: #38230b;
+	--yellow-11: #462b0d;
+	--blue-46: #78aacd;
+	--blue-30: #2a88b7;
+	--blue-12: #193c50;
+	--blue-10: #162936;
+	--red-10: #441b1b;
+	--red-12: #632425;
+	--red-30: #d55759;
+	--red-46: #e88b88;
+	--backgroundBase: var(--grey-10);
+	--backgroundAlt: var(--grey-11);
+	--backgroundAltHover: var(--grey-13);
+	--backgroundElevated1: var(--grey-13);
+	--backgroundElevated2: var(--grey-16);
+	--foregroundInverted: var(--grey-120);
+	--foregroundPrimaryCTA: var(--grey-10);
+	--lessonsListBorder: var(--borderPrimary);
+	--borderImportant: var(--grey-13);
+	--borderPrimary: var(--grey-13);
+	--backgroundProgressBarValue: var(--grey-30);
+	--iframeBg: var(--grey-66);
+	--backgroundPrismLineHighlight: #44475a;
+	--prismBlockBg: #282a36;
+	--prismLineNumbersBg: var(--prismBlockBg);
+	--prismColor: #f8f8f2;
+	--backgroundCalloutAlt: #462900;
+	--backgroundTextHighlight: var(--backgroundAlt);
+	--prismTokenComment: #6272a4;
+	--prismTokenConstant: #9876aa;
+	--prismTokenPunctuation: #f8f8f2;
+	--prismTokenSymbols: #bd93f9;
+	--prismTokenSymbolsAlt: #f1fa8c;
+	--prismTokenOperator: #ff79c6;
+	--prismTokenAtRule: #ce9178;
+	--prismTokenKeywordControl: #c586c0;
+	--prismTokenFunctionAndClassname: #8be9fd;
+	--prismTokenRegex: #d16969;
+	--prismTokenClassname: #8be9fd;
+	--prismTokenVariable: #9cdcfe;
+	--prismTokenKeyword: #ff79c6;
+	--prismTokenImportant: #ff79c6;
+	--prismTokenInterpolation: #f8f8f2;
+	--prismTokenTagPunctuation: gray;
+	--prismTokenCdata: gray;
+	--prismTokenAttrvalue: #ce9178;
+	--gradientFadeOut: var(--gradientFadeOutDark);
+}
+:root {
+	--color_red: #b80000;
+	--color_green: #469269;
+	--color_black: #000;
+	--color_orange: #f8ab47;
+	--color_orange_light: #fdc073;
+	--color-red-accent: #d44242;
+	--link_color: #0059b2;
+	--light_link_color: #3b86c4;
+	--alternate_link_color: #2974bb;
+	--link_color_new: #3a8aed;
+	--link_hover_color: #ba1000;
+	--link_visited_color: #551a8b;
+	--navigation_link_color: #696664;
+	--color-grey-25: #3b3b3b;
+	--color-grey-60: #919191;
+	--color-grey-80: #c6c6c6;
+	--color-grey-90: #e2e2e2;
+	--text_yellow: #fffed7;
+	--text_grey_dark: #373636;
+	--text_courses_dark: #404040;
+	--color: #333;
+	--code_color: #333;
+	--gray_color: #666;
+	--light_gray_color: #999;
+	--ultralight_gray_color: #e1e1e1;
+	--separator_color: #dfdfd0;
+	--secondary_color: #b20600;
+	--hover_color_correction: 25%;
+	--background: #fff;
+	--background_light: #eee;
+	--background_blocks: #f5f2f0;
+	--background_yellow_light: #f6f4eb;
+	--background_yellow_dark: #ede9d8;
+	--errorColor: #cc5b4d;
+}
+html[data-theme="dark"] img {
+	-webkit-filter: brightness(0.8) contrast(1.2);
+	filter: brightness(0.8) contrast(1.2);
+}
+
+/* Preloader */
+.page-preloader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--backgroundBase);
+	z-index: 10;
+}
+.spinner {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px 0 0 -100px;
+  border: 16px solid var(--blue-46); 
+  border-top: 16px solid var(--blue-10); 
+  border-radius: 50%;
+  animation: spin 2s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+}
+
+
+body {
+	font-family: var(--font-familyAlumi);
+	//font-family: var(--font-familySFPro);
+	background-color: var(--backgroundBase);
+	color: var(--foregroundDefault);
+}
+
+.theme {
+	//position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid var(--borderPrimary);
+	border-radius: 30px;
+	width: 110px;
+	height: 30px;
+	margin-right: 20px;
+	//top: 20px;
+	//right: 20px;
+	z-index: 9999;
+	//transform: translate(-50%, -50%) perspective(1000px) rotateX(90deg);
+	//animation: appear 1s ease-in-out forwards;
+	//animation-delay: 1s;
+}
+.theme-toggle {
+	display: flex;
+	justify-content: flex-start;
+	width: 50px;
+	height: 24px;
+	//background-color: #65f8a5;
+	border: 1px solid var(--borderPrimary);
+	border-radius: 30px;
+	cursor: pointer;
+}
+.theme-icon-left {
+	width: 20px;
+	margin: 5px;
+}
+.theme-icon-right {
+	width: 32px;
+}
+.slider {
+	width: 22px;
+	height: 22px;
+	//background-image: linear-gradient(to right, #c8c8c8, #282828);
+	background-color: var(--foregroundAlt);
+	border: 1px solid var(--borderPrimary);
+	border-radius: 50%;
+	//box-shadow: 1px 1px 2px #282828;
+	transition: all 0.3s ease-in-out;
+}
