@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           if (xhr.responseText === 'success') {
-            window.location.href = '/main.html';
+            window.location.href = './main.html';
           } else {
             document.querySelector('.error-message').innerHTML = 'Invalid login or password.';
             document.querySelector('.error-message').style.display = 'block';
