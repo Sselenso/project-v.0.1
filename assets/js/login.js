@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Проверка логина и пароля для администратора
     if (login === 'admin' && password === 'admin') {
-      window.location.href = '/main.html';
+      window.location.href = './main.html';
       return;
     }
 
