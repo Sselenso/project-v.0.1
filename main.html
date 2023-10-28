@@ -5,10 +5,12 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icons/favicon-16x16.png" />
 		<link rel="manifest" href="./assets/img/icons/site.webmanifest" />
+		<script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/css/index.css" />
+		<meta name="google" content="notranslate" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
 		<title>База</title>
 	</head>
 	<body>
@@ -473,7 +475,7 @@
 							<div class="tabs-content" id="tab-3">
 								<section class="tabs-sections">
 									<div class="tabs-section">
-										<div class="tab-title">Финансовые вопросы</div>
+										<div class="tab-title">Технические вопросы</div>
 										<div class="tab-discription">
 											<p>
 												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in reiciendis ipsum minus, excepturi corporis a sit facere nemo nisi temporibus commodi
@@ -652,8 +654,23 @@
 				</div>
 			</div>
 
-			<footer></footer>
+			<section class="coometns">
+				<div id="vk_comments"></div>
+				<script type="text/javascript">
+					VK.Widgets.Comments("vk_comments");
+				</script>
+			</section>
+
+			<footer>
+				<div class="footer-wrap"></div>
+			</footer>
 		</div>
+		<script type="text/javascript">
+			VK.init({
+				apiId: 51780608,
+				onlyWidgets: true,
+			});
+		</script>
 
 		<script type="text/JavaScript" src="./assets/js/preloader.js"></script>
 		<script type="text/JavaScript" src="./assets/js/theme.js"></script>
