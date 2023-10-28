@@ -5,13 +5,12 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icons/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icons/favicon-16x16.png" />
 		<link rel="manifest" href="./assets/img/icons/site.webmanifest" />
-		<script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google" content="notranslate" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
-		<title>База</title>
+		<title>Авада</title>
 	</head>
 	<body>
 		<div id="page-preloader"><span class="spinner"></span></div>
@@ -52,7 +51,22 @@
 				</div>
 			</header>
 			<div class="search-block">
-				<div class="search-wrap"></div>
+				<div class="search-wrap">
+					<div class="search-content">
+						<h1 class="search-title">Экспертная система</h1>
+						<p class="search-text">Перед вами база знаний по продукту компании. Она содержит обширные материалы, охватывающие основы и различные аспекты работы в компании.</p>
+						<form class="search-form" action="/search/">
+							<div class="text-input">
+								<input class="text-input-search" type="search" name="query" placeholder="Поиск по " required="required" />
+							</div>
+							<button class="search-button" type="submit" name="type" value="article">Найти</button>
+						</form>
+						<div class="search-description">
+							<h2 class="search-desription-title">Содержание</h2>
+							<p class="search-desription-text">Первые две части посвящены общим и финансовым вопросам. Затем идут дополнительные циклы статей  техничекого характера.</p>
+						</div>
+					</div>
+				</div>	
 			</div>
 
 			<div class="page-iner">
@@ -91,7 +105,7 @@
 										<div class="tab-list">
 											<div class="list-item">
 												<div class="list-title">
-													<a class="list-link" href="http://">Оплата</a>
+													<a class="list-link" href="./oplata.html" target="_blank">Оплата</a>
 												</div>
 												<ul class="list-sub">
 													<li class="list-sub-item">
@@ -654,27 +668,11 @@
 				</div>
 			</div>
 
-			<section class="coometns">
-				<div id="VK">
-					<div id="vk_comments"></div>
-					<script type="text/javascript">
-						VK.Widgets.Comments("vk_comments");
-					</script>
-				</div>
-			</section>
-
 			<footer>
 				<div class="footer-wrap"></div>
 			</footer>
 		</div>
-		
-		
-		<script type="text/javascript">
-			VK.init({
-				apiId: 51780608,
-				onlyWidgets: true,
-			});
-		</script>
+
 		<script type="text/JavaScript" src="./assets/js/preloader.js"></script>
 		<script type="text/JavaScript" src="./assets/js/theme.js"></script>
 		<script type="text/JavaScript" src="./assets/js/main.js"></script>

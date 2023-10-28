@@ -287,6 +287,36 @@ html[data-theme="dark"] img {
   }
 }
 
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--backgroundAlt);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--backgroundAltHover);
+	border-radius: 5px;
+	width: 5px;
+	transition: width 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	height: 5px;
+}
+
+
+
+
 
 body {
 	font-family: var(--font-familyAlumi);

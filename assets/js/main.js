@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tabs-content");
   const menuWrap = document.querySelector(".tabs-menu-wrap");
   const menu = document.querySelector(".tabs-menu");
+	const searchBlock = document.querySelector(".search-block");
 
   function setActiveTab(sectionId) {
     menuButtons.forEach(button => {
       const href = button.getAttribute("href");
       if (href === sectionId) {
-        button.classList.add("active");
+        button.classList.add("active");				
       } else {
         button.classList.remove("active");
       }
@@ -21,8 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentScrollPosition > menuWrapOffsetTop) {
       menu.classList.add("sticky");
+			searchBlock.style.display = "none";
     } else {
       menu.classList.remove("sticky");
+			searchBlock.style.display = "block";
     }
 
     tabs.forEach(tab => {
