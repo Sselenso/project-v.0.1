@@ -409,6 +409,10 @@ a:active {
   outline: none;
 }
 
+:visited {
+  color: var(--foregroundAction);
+}
+
 nav,
 footer,
 header,
