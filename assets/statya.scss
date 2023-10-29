@@ -46,7 +46,7 @@ ul li {
 }
 .breadcrumbs-item-home .breadcrumbs-link:before {
 	content: "\E813";
-	//content: url("../img/icons/house.svg");
+	content: url("../img/icons/house.svg");
 }
 .breadcrumbs .breadcrumbs-item + .breadcrumbs-item:before {
 	content: "\2192";

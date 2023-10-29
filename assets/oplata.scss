@@ -33,8 +33,19 @@ p {
 	margin: 0;
 }
 .breadcrumbs-item-home .breadcrumbs-link:before {
-	content: "\E813";		
+	//content: "\E813";	
+	content: url("../img/icons/house.svg");	
 }
+.breadcrumbs-item-home .breadcrumbs-link:hover::before {
+	//content: "\E813";	
+	//fill:  red;
+}
+
+
+
+
+
+	
 
 .breadcrumbs .breadcrumbs-item + .breadcrumbs-item:before {
 	content: "\2192";

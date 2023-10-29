@@ -1082,7 +1082,7 @@ p {
 }
 
 .breadcrumbs-item-home .breadcrumbs-link:before {
-  content: "\e813";
+  content: url("../img/icons/house.svg");
 }
 
 .breadcrumbs .breadcrumbs-item + .breadcrumbs-item:before {
