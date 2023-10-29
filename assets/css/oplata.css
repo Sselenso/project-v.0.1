@@ -412,10 +412,6 @@ a:active {
   outline: none;
 }
 
-:visited {
-  color: var(--foregroundAction);
-}
-
 nav,
 footer,
 header,
@@ -451,6 +447,10 @@ button {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+:visited {
+  color: var(--foregroundAction);
 }
 
 a,
@@ -879,10 +879,6 @@ a:active {
   outline: none;
 }
 
-:visited {
-  color: var(--foregroundAction);
-}
-
 nav,
 footer,
 header,
@@ -918,6 +914,10 @@ button {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+:visited {
+  color: var(--foregroundAction);
 }
 
 a,
@@ -1056,8 +1056,8 @@ p {
 }
 
 .main-header-nav {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1083,8 +1083,6 @@ p {
 
 .breadcrumbs-item-home .breadcrumbs-link:before {
   content: "\e813";
-  background-image: url(./img/icons/house.png);
-  width: 1rem;
 }
 
 .breadcrumbs .breadcrumbs-item + .breadcrumbs-item:before {
@@ -1166,7 +1164,8 @@ p {
   border-right: 0;
 }
 
-.lessons-list-section-title, .lessons-list-repo-link {
+.lessons-list-section-title,
+.lessons-list-repo-link {
   font-size: 0.875rem;
   line-height: 1.42;
 }

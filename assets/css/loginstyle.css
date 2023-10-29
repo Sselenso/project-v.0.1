@@ -410,10 +410,6 @@ a:active {
   outline: none;
 }
 
-:visited {
-  color: var(--foregroundAction);
-}
-
 nav,
 footer,
 header,
@@ -449,6 +445,10 @@ button {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+:visited {
+  color: var(--foregroundAction);
 }
 
 a,

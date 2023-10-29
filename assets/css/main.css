@@ -409,10 +409,6 @@ a:active {
   outline: none;
 }
 
-:visited {
-  color: var(--foregroundAction);
-}
-
 nav,
 footer,
 header,
@@ -448,6 +444,10 @@ button {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+:visited {
+  color: var(--foregroundAction);
 }
 
 a,
@@ -486,7 +486,7 @@ body {
 .main {
   min-height: 100%;
   display: grid;
-  grid-template: minmax(70px, auto) 1fr minmax(229px, auto)/1fr;
+  grid-template: minmax(4.375rem, auto) 1fr minmax(14.375rem, auto)/1fr;
   grid-template-areas: "header" "main" "footer";
 }
 
@@ -495,7 +495,7 @@ body {
   z-index: 1;
   position: relative;
   background: var(--backgroundBase);
-  border-bottom: 4px solid var(--borderPrimary);
+  border-bottom: 0.25rem solid var(--borderPrimary);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -516,7 +516,7 @@ body {
   font-size: 2.5rem;
   margin: 0 1.875rem;
   padding-right: 1.875rem;
-  border-right: 2px solid var(--borderPrimary);
+  border-right: 0.125rem solid var(--borderPrimary);
 }
 
 .header-navigation {
@@ -581,6 +581,18 @@ body {
   margin: 0 auto;
 }
 
+.search-block {
+  display: block;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.search-block.hidden {
+  opacity: 0;
+  display: none;
+}
+
 .search-wrap {
   position: relative;
   padding: 2.5rem 0 2.5rem;
@@ -622,7 +634,6 @@ body {
   padding: 0.25rem 0.875rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.25rem;
   border-radius: 0.25rem 0 0 0.25rem;
   color: var(--foregroundDefault);
   border: 0.0625rem solid var(--borderPrimary);
@@ -655,16 +666,15 @@ body {
 
 .search-desription-title {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.25;
-  margin-bottom: 16px;
+  margin-bottom: 0.9375rem;
 }
 
 .search-desription-text {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
-  margin: 0 0 12px;
+  margin: 0 0 0.75rem;
   padding: 0;
 }
 
@@ -691,9 +701,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   overflow-x: auto;
-  border-bottom: 2px solid var(--borderPrimary);
+  border-bottom: 0.125rem solid var(--borderPrimary);
 }
 
 .tabs-menu-button {
@@ -701,24 +711,22 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-decoration: none;
-  padding: 12px 8px;
-  min-width: 180px;
+  padding: 0.75rem 0.5rem;
+  min-width: 11.25rem;
   border: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 0.125rem solid transparent;
   cursor: pointer;
-  font-family: SF Pro Text, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1px;
+  line-height: 1.5;
+  letter-spacing: 0.0625rem;
   text-align: left;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -734,7 +742,7 @@ body {
 
 .tabs-section {
   padding: 2.1875rem 0;
-  border-bottom: 2px solid var(--borderPrimary);
+  border-bottom: 0.125rem solid var(--borderPrimary);
 }
 
 .tab-title {
@@ -746,10 +754,10 @@ body {
 }
 
 .tab-discription {
-  max-width: 700px;
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 20px;
+  max-width: 43.75rem;
+  margin-bottom: 1.5625rem;
+  font-size: 0.875rem;
+  line-height: 1.42;
 }
 
 .tab-list {
@@ -791,11 +799,11 @@ body {
 .list-sub-item {
   counter-increment: b;
   -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
   margin: 0;
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -814,11 +822,11 @@ body {
 
 .list-sub-title:before {
   position: absolute;
-  top: 4px;
+  top: 0.25rem;
   left: 0;
   font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1.33;
   content: counter(a) "." counter(b);
 }
 

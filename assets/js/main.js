@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentScrollPosition > menuWrapOffsetTop) {
       menu.classList.add("sticky");
-			searchBlock.style.display = "none";
+			searchBlock.classList.add("hidden");
     } else {
       menu.classList.remove("sticky");
-			searchBlock.style.display = "block";
+			searchBlock.classList.remove("hidden");
     }
 
     tabs.forEach(tab => {

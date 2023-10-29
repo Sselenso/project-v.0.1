@@ -8,7 +8,7 @@ body {
 .main {
 	min-height: 100%;
 	display: grid;
-	grid-template: minmax(70px, auto) 1fr minmax(229px, auto) / 1fr;
+	grid-template: minmax(rem(70), auto) 1fr minmax(rem(230), auto) / 1fr;
 	grid-template-areas:
 		"header"
 		"main"
@@ -19,7 +19,7 @@ body {
 	z-index: 1;
 	position: relative;
 	background: var(--backgroundBase);
-	border-bottom: 4px solid var(--borderPrimary);
+	border-bottom: rem(4) solid var(--borderPrimary);
 	box-sizing: border-box;
 }
 .container {
@@ -35,7 +35,7 @@ body {
 	font-size: rem(40);
 	margin: 0 rem(30);
 	padding-right: rem(30);
-	border-right: 2px solid var(--borderPrimary);
+	border-right: rem(2) solid var(--borderPrimary);
 }
 .header-navigation {
 	flex-grow: 1;
@@ -80,6 +80,17 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
+.search-block {
+	display: block;
+	transition: opacity 0.5s ease;
+	opacity: 1;
+}
+
+.search-block.hidden {
+	opacity: 0;
+	display: none;
+}
+
 .search-wrap {
 	//height: rem(300);
 	position: relative;
@@ -111,8 +122,7 @@ body {
 }
 .text-input-search {
 	padding: rem(4) rem(14);
-	box-sizing: border-box;
-	padding: rem(4);
+	box-sizing: border-box;	
 	border-radius: rem(4) 0 0 rem(4);
 	color: var(--foregroundDefault);
 	border: rem(1) solid var(--borderPrimary);
@@ -134,26 +144,19 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: rem(40) 0 0;
-	
 }
 .search-desription-title {
 	font-weight: 700;
-	font-size: 22px;
+	font-size: rem(22);
 	line-height: 1.25;
-	margin-bottom: 16px;
+	margin-bottom: rem(15);
 }
-.search-desription-text{
+.search-desription-text {
 	font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 0 12px;
-    padding: 0;
+	line-height: 1.5;
+	margin: 0 0 rem(12);
+	padding: 0;
 }
-
-
-
-
-
 
 //
 
@@ -173,33 +176,25 @@ body {
 .tabs-menu-scroll {
 	flex-flow: row nowrap;
 	display: flex;
-	gap: 24px;
+	gap: rem(24);
 	overflow-x: auto;
-	border-bottom: 2px solid var(--borderPrimary);
+	border-bottom: rem(2) solid var(--borderPrimary);
 }
 .tabs-menu-button {
 	background: none;
 	box-shadow: none;
 	text-decoration: none;
-	padding: 12px 8px;
-	min-width: 180px;
+	padding: rem(12) rem(8);
+	min-width: rem(180);
 	border: none;
-	border-bottom: 2px solid transparent;
-	cursor: pointer;
-	font-family:
-		SF Pro Text,
-		sans-serif;
+	border-bottom: rem(2) solid transparent;
+	cursor: pointer;	
 	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 1px;
+	font-weight: 500;	
+	line-height: 1.5;
+	letter-spacing: rem(1);
 	text-align: left;
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
+	display: inline-flex;	
 	flex-direction: column;
 	box-sizing: border-box;
 	color: var(--foregroundDefault);
@@ -212,7 +207,7 @@ body {
 }
 .tabs-section {
 	padding: rem(35) 0;
-	border-bottom: 2px solid var(--borderPrimary);
+	border-bottom: rem(2) solid var(--borderPrimary);
 }
 .tab-title {
 	margin-bottom: rem(25);
@@ -222,10 +217,10 @@ body {
 	color: var(--foregroundDefault);
 }
 .tab-discription {
-	max-width: 700px;
-	margin-bottom: 24px;
-	font-size: 14px;
-	line-height: 20px;
+	max-width: rem(700);
+	margin-bottom: rem(25);
+	font-size: rem(14);
+	line-height: 1.42;
 }
 .tab-list {
 	counter-reset: a;
@@ -255,13 +250,9 @@ body {
 	columns: 3;
 }
 .list-sub-item {
-	counter-increment: b;
-	-webkit-column-break-inside: avoid;
-	-moz-column-break-inside: avoid;
+	counter-increment: b;	
 	break-inside: avoid;
-	margin: 0;
-	display: -webkit-flex;
-	display: -ms-flexbox;
+	margin: 0;	
 	display: flex;
 	align-items: center;
 }
@@ -275,7 +266,7 @@ body {
 }
 .list-sub-title:before {
 	position: absolute;
-	top: 4px;
+	top: rem(4);
 	left: 0;
 	font-family:
 		Consolas,
@@ -283,8 +274,8 @@ body {
 		Menlo,
 		Monaco,
 		monospace;
-	font-size: 12px;
-	line-height: 16px;
+	font-size: rem(12);
+	line-height: 1.33;
 	content: counter(a) "." counter(b);
 }
 .list-sub-link {
@@ -292,6 +283,7 @@ body {
 	color: var(--foregroundAction);
 }
 
+//footer
 .footer-wrap {
 	min-height: rem(500);
 }

@@ -6,7 +6,7 @@ p {
 	margin: rem(20) 0;
 }
 
-.main-width-limit{
+.main-width-limit {
 	max-width: rem(800);
 	margin: 0 auto;
 }
@@ -15,10 +15,7 @@ p {
 	margin: rem(40) 0 rem(16);
 }
 
-
-.main-header-nav {
-	display: -webkit-flex;
-	display: -ms-flexbox;
+.main-header-nav {	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -28,30 +25,33 @@ p {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	color: var(--foregroundAlt)
+	color: var(--foregroundAlt);
 }
 
 .breadcrumbs .breadcrumbs-item {
 	display: inline-block;
-	margin: 0
+	margin: 0;
 }
 .breadcrumbs-item-home .breadcrumbs-link:before {
-	content: "\E813";
-		background-image: url(./img/icons/house.png);
-	width: rem(16);
+	content: "\E813";		
 }
 
-.breadcrumbs .breadcrumbs-item+.breadcrumbs-item:before {
+.breadcrumbs .breadcrumbs-item + .breadcrumbs-item:before {
 	content: "\2192";
-	font-family: Lucida Grande,Lucida Sans Unicode,Arial,Helvetica,sans-serif;
+	font-family:
+		Lucida Grande,
+		Lucida Sans Unicode,
+		Arial,
+		Helvetica,
+		sans-serif;
 	color: var(--foregroundAlt);
 	display: inline-block;
 	margin: 0 rem(9) 0 rem(7);
-	vertical-align: rem(3);	
+	vertical-align: rem(3);
 }
 
 .breadcrumbs-hidden-text {
-	display: none
+	display: none;
 }
 
 .breadcrumbs-item-home .breadcrumbs-link:before {
@@ -59,32 +59,31 @@ p {
 	max-width: rem(10);
 	font-size: rem(18);
 	color: var(--foregroundAlt);
-	vertical-align: -1px;	
+	vertical-align: -1px;
 }
 
-
 .working-hover .breadcrumbs-item-home .breadcrumbs-link:hover {
-	text-decoration: none
+	text-decoration: none;
 }
 
 .working-hover .breadcrumbs-item-home .breadcrumbs-link:hover:before {
-	color: inherit
+	color: inherit;
 }
 
 .breadcrumbs-link {
-	color: var(--foregroundAction)
+	color: var(--foregroundAction);
 }
 
 .working-hover .breadcrumbs-link:hover {
-	color: var(--foregroundAccent)
+	color: var(--foregroundAccent);
 }
 
-.main-header-title{
+.main-header-title {
 	//font: 700 32px/40px BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+	font-weight: 700;
 	font-size: rem(32);
 	margin: rem(10) auto rem(12);
-  padding: 0;
+	padding: 0;
 }
 .content:before {
 	content: "";
@@ -95,7 +94,7 @@ p {
 	margin: rem(11) 0 rem(22);
 	border-radius: rem(6);
 	border: rem(4) solid var(--lessonsListBorder);
-	background: var(--backgroundBase)
+	background: var(--backgroundBase);
 }
 
 .lessons-list-info {
@@ -118,58 +117,57 @@ p {
 }
 
 .lessons-list-section:last-child {
-	border-right: 0
+	border-right: 0;
 }
 
-.lessons-list-section-title, .lessons-list-repo-link {
+.lessons-list-section-title,
+.lessons-list-repo-link {
 	font-size: rem(14);
 	line-height: 1.42;
 }
 
 .lessons-list-stat-line {
-	margin-top: rem(6)
+	margin-top: rem(6);
 }
-
-
 
 .lessons-list ol.lessons-list-lessons {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	counter-reset: c
+	counter-reset: c;
 }
 
 .lessons-list li.lessons-list-lesson {
 	margin: 0;
-	position: relative
+	position: relative;
 }
 
-.lessons-list-lesson {	
+.lessons-list-lesson {
 	padding: rem(16) 20px 14px 55px;
-	border-bottom: 1px solid var(--lessonsListBorder)
+	border-bottom: 1px solid var(--lessonsListBorder);
 }
 
 .lessons-list-lessons .lessons-list-lessons {
 	max-height: 0;
-	overflow: hidden
+	overflow: hidden;
 }
 
 .lessons-list-lesson-open .lessons-list-lessons {
-	max-height: 1500px
+	max-height: 1500px;
 }
 
 .lessons-list-lesson:last-child {
-	border: 0
+	border: 0;
 }
 
 .lessons-list-lesson:before {
 	content: counter(c) ".";
-	counter-increment: c;	
+	counter-increment: c;
 	color: #959595;
 	position: absolute;
 	left: 10px;
 	top: 16px;
 	min-width: 30px;
 	min-height: 22px;
-	text-align: right
+	text-align: right;
 }
